@@ -1,0 +1,177 @@
+/* Variáveis de cor */
+:root {
+    --magenta-escuro: hsl(300, 43%, 22%);
+    --rosa-suave: hsl(333, 80%, 67%);
+    --magenta-acinzentado-escuro: hsl(303, 10%, 53%);
+    --magenta-acinzentado-claro: hsl(300, 24%, 96%);
+    --branco: hsl(0, 0%, 100%);
+  }
+  
+  /* Fontes personalizadas */
+  @font-face {
+    font-family: League Spartan;
+    font-weight: 400;
+    src: url(../fonts/League_Spartan/static/LeagueSpartan-Regular.ttf);
+  }
+  
+  @font-face {
+    font-family: League Spartan;
+    font-weight: 500;
+    src: url(../fonts/League_Spartan/static/LeagueSpartan-Medium.ttf);
+  }
+  
+  @font-face {
+    font-family: League Spartan;
+    font-weight: 600;
+    src: url(../fonts/League_Spartan/static/LeagueSpartan-Bold.ttf);
+  }
+  
+  /* Estilos globais */
+  html {
+    height: 100%;
+  }
+  
+  body {
+    background-color: var(--branco);
+    background-image: url(../images/bg-pattern-top-desktop.svg), url(../images/bg-pattern-bottom-desktop.svg);
+    background-repeat: no-repeat, no-repeat;
+    background-position: top, bottom;
+    min-height: 100vh;
+    background-position: top 29px left, bottom -30px right;
+    font-family: League Spartan;
+  }
+  
+  /* Seções principais */
+  main {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    position: relative;
+  }
+  
+  /* Seção de Feedback Social */
+  #feedback-social {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .coluna-feedback,
+  .coluna-avaliacoes {
+    width: 50%;
+  }
+  
+  /* Feedback da Seção */
+  .coluna-feedback {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .texto-feedback {
+    font-weight: 600;
+    font-size: 40px;
+    width: 300px;
+    line-height: 0.9;
+    color: var(--magenta-escuro);
+    margin: 100px 20px 10px -7%;
+  }
+  
+  .descricao-feedback {
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 1.5;
+    width: 400px;
+    color: var(--magenta-acinzentado-escuro);
+    margin: 10px 20px 20px 6%;
+  }
+  
+  /* Avaliações da Seção */
+  .coluna-avaliacoes {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+  }
+  
+  .item-avaliacao {
+    background: var(--magenta-acinzentado-claro);
+    color: var(--magenta-escuro);
+    font-weight: 600;
+    font-size: 15px;
+    display: flex;
+    padding: 15px;
+    border-radius: 10px;
+    width: 400px;
+    text-align: center;
+  }
+  
+  .item-avaliacao:first-child {
+    margin: 100px 10px 10px 20px;
+  }
+  
+  .item-avaliacao:nth-child(2) {
+    margin: 10px 10px 10px 50px;
+  }
+  
+  .item-avaliacao:last-child {
+    margin: 10px 10px 10px 90px;
+  }
+  
+  .icones-estrela {
+    background-image: url(../images/icon-star.svg);
+    background-repeat: repeat-x;
+    width: 85px;
+    height: 18px;
+  }
+  
+  /* Seção de Avaliações dos Clientes */
+  #avaliacoes-clientes {
+  width: 100%;
+  font-size: 15px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.container-avaliacao {
+  display: flex;
+  flex-direction: column;
+  width: 360px;
+  height: 225px;
+  background: var(--magenta-escuro);
+  border-radius: 10px;
+  margin: 10px;
+  margin-top: 120px; /* Adiciona uma margem superior de 20px */
+}
+
+.info-cliente {
+  display: flex;
+  flex-direction: row;
+  color: var(--branco);
+  margin: 30px;
+}
+
+.foto-cliente img {
+  width: 40px;
+  height: 40px;
+  clip-path: circle(50% at center);
+}
+
+.detalhes-cliente {
+  display: flex;
+  flex-direction: column;
+  margin-left: 20px;
+}
+
+.feedback-cliente {
+  color: var(--branco);
+  margin: 10px 20px 40px 30px;
+}
+
+.status-cliente {
+  color: var(--rosa-suave);
+}
+  
